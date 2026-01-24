@@ -1,0 +1,10 @@
+streamlit
+langchain-core
+langchain-community
+langchain-neo4j
+langchain-ollama
+langchain-experimental
+neo4j
+python-dotenv
+
+streamlit-agraph
