@@ -1,10 +1,9 @@
 streamlit
-langchain-core
+langchain
 langchain-community
-langchain-neo4j
-langchain-ollama
+langchain-core
 langchain-experimental
-neo4j
-python-dotenv
-
+langchain-ollama
+langchain-neo4j
 streamlit-agraph
+pandas
