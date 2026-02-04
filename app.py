@@ -483,10 +483,11 @@ def process_documents(documents, use_db, uri, user, pwd, clear, allowed_nodes=[]
 def query_graph(query, graph_obj, graph_docs, use_db):
     # 1. Check for Temporal Query on Source Data
     if "source_df" in st.session_state and st.session_state.get("date_col"):
-        detected_date = extract_date_from_query(query)
-        if detected_date:
-            st.info(f"📅 Temporal Search Active: Using data for {detected_date.date()}")
-            return query_pandas_context(query, st.session_state["source_df"], st.session_state["date_col"], detected_date)
+        date_val, granularity = extract_date_from_query(query)
+        if date_val:
+            display_date = date_val.date() if granularity == "full" else date_val
+            st.info(f"📅 Temporal Search Active: Using data for {display_date}")
+            return query_pandas_context(query, st.session_state["source_df"], st.session_state["date_col"], date_val, granularity)
 
     llm = get_llm()
     

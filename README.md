@@ -1,6 +1,6 @@
 # 🕸️ Dynamic Text-to-Graph RAG (Ollama & Neo4j)
 
-A powerful **Streamlit** application that turns unstructured text into interactive knowledge graphs using **Local LLMs (Ollama)**.
+Dynamic Text-to-Graph RAG This project is an AI-powered Knowledge Graph Generator & Chatbot. It bridges the gap between unstructured text (like stories, articles, or reports) and structured knowledge graphs. It's a powerful **Streamlit** application that turns unstructured text into interactive knowledge graphs using **Local LLMs (Ollama)**.
 
 ## 🚀 Features
 
