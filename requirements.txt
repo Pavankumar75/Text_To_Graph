@@ -7,3 +7,4 @@ langchain-ollama
 langchain-neo4j
 streamlit-agraph
 pandas
+scikit-learn
